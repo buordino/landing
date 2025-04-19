@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header>
       <div className="flex items-center px-12 py-4">
-        <div className="grow flex items-center justify-center">
+        <div className="hidden sm:grow sm:flex sm:items-center sm:justify-center">
           <Navigation />
         </div>
         <div>
