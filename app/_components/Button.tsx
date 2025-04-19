@@ -1,11 +1,16 @@
+"use client";
 import { ReactNode } from "react";
 
 interface ButtonPropsType {
   children: ReactNode;
+  onClick?: () => void;
 }
-const Button = ({ children }: ButtonPropsType) => {
+const Button = ({ children, onClick }: ButtonPropsType) => {
   return (
-    <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg  bg-custome-orange-2 text-black rounded-[14px] ">
+    <button
+      onClick={onClick}
+      className="btn  btn-xs sm:btn-sm md:btn-md lg:btn-lg text-[15px]  bg-custome-orange-2 text-black rounded-[14.5px] "
+    >
       {children}
     </button>
   );

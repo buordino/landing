@@ -1,4 +1,6 @@
 import Button from "./Button";
+import { TiDownload } from "react-icons/ti";
+import { FaGooglePlay } from "react-icons/fa";
 
 const MainContent = () => {
   return (
@@ -11,11 +13,22 @@ const MainContent = () => {
         تولید سادگی نام
       </p>
       <div className="mt-7 flex items-center gap-3">
-        <Button>دانلود مستقیم</Button>
-        <Button>دانلود از گوگل پلی</Button>
+        <Button>
+          <div className="flex items-center gap-2 ">
+            <TiDownload size={15}  />
+            <span>دانلود مستقیم</span>
+          </div>
+        
+        </Button>
+        <Button>
+          <div className="flex items-center gap-2 ">
+            <FaGooglePlay size={15} />
+            <span>دانلود از گوگل پلی</span>
+          </div>
+        </Button>
       </div>
     </div>
   );
-}
+};
 
-export default MainContent
+export default MainContent;
