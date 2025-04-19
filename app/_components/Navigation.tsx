@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 export const navigationItems = [
-  { text: "صفحه اصلی", href: "/" },
+  { text: "صفحه اصلی", href: "#main" },
   { text: "توسعه دهندگان", href: "/" },
   { text: "ویژگی ها", href: "/" },
   { text: "درباره برنامه", href: "/" },

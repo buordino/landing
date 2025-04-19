@@ -21,7 +21,7 @@ interface RootLayoutPropsType {
 
 export default function RootLayout({ children }: RootLayoutPropsType) {
   return (
-    <html lang="fa" dir="rtl">
+    <html lang="fa" dir="rtl" className="scroll-smooth">
       <body className={`${vazir.className} overflow-x-hidden antialiased `}>
         <Header />
         <main>{children}</main>
