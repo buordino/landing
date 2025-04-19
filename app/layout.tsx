@@ -10,8 +10,9 @@ const vazir = Vazirmatn({
   weight: "400",
 });
 export const metadata: Metadata = {
-  title: "بوردینو",
-  description: "",
+  title: "بردینو",
+  description:
+    "بردینو | اپلیکیشن قرعه‌کشی و بازی روزانه – همین امروز برنده شو!",
 };
 
 interface RootLayoutPropsType {
