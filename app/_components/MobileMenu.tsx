@@ -1,33 +1,21 @@
 import { IoMdMenu } from "react-icons/io";
+import { navigationItems } from "./Navigation";
+import Link from "next/link";
 
 const MobileMenu = () => {
   return (
-    <div className="drawer">
-      <input id="my-drawer" type="checkbox" className="drawer-toggle" />
-      <div className="drawer-content">
-        <label
-          htmlFor="my-drawer"
-          className="btn bg-custome-orange-2 drawer-button"
-        >
-            <IoMdMenu size={25} color="white" />
-        </label>
+    <div className="dropdown">
+      <div tabIndex={0} role="button" className="btn text-white bg-custome-orange-2 cursor-pointer">
+        <IoMdMenu size={22} color="white" />
       </div>
-      <div className="drawer-side">
-        <label
-          htmlFor="my-drawer"
-          aria-label="close sidebar"
-          className="drawer-overlay"
-        ></label>
-        <ul className="menu bg-base-200 text-base-content min-h-full w-80 p-4">
-          {/* Sidebar content here */}
-          <li>
-            <a>Sidebar Item 1</a>
-          </li>
-          <li>
-            <a>Sidebar Item 2</a>
-          </li>
-        </ul>
-      </div>
+      <ul
+        tabIndex={0}
+        className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-xl"
+      >
+        {navigationItems.map((nav,index)=><li className="py-1 transition-all duration-100 hover:text-custome-orange-2" key={index}>
+            <Link href={nav.href}>{nav.text}</Link>
+        </li>)}
+      </ul>
     </div>
   );
 };
