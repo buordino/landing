@@ -9,3 +9,6 @@
   --color-custome-border:#B6ADAD;
 
 }
+@utility btn {
+  @apply rounded-full;
+}
