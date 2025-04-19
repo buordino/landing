@@ -12,13 +12,18 @@ const Navigation = () => {
       {navigationItems.map((nav, index) => (
         <Link
           role="tab"
-          className=" tab !text-custome-black hover:!text-custome-orange-2 "
+          className=" tab !text-custome-black hover:!text-custome-orange-2 font-[600] "
           href={nav.href}
           key={index}
         >
           {index === 0 && (
-            <div  className="relative size-3.5 ml-1">
-              <Image className="object-center" fill src={"/SVGs/Star 2.svg"} alt="Star-2" />
+            <div className="relative size-3.5 ml-1">
+              <Image
+                className="object-center"
+                fill
+                src={"/SVGs/Star 2.svg"}
+                alt="Star-2"
+              />
             </div>
           )}
           {nav.text}
