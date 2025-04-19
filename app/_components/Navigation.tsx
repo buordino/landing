@@ -9,8 +9,14 @@ const navigationItems = [
 const Navigation = () => {
   return (
     <div role="tablist" className="tabs">
-      {navigationItems.map((nav,index) => (
-        <Link role="tab" className="tab text-custome-black" href={nav.href} key={index}>
+      {navigationItems.map((nav, index) => (
+        <Link
+          role="tab"
+          className=" tab !text-custome-black hover:!text-custome-orange-2 "
+         
+          href={nav.href}
+          key={index}
+        >
           {nav.text}
         </Link>
       ))}
