@@ -1,3 +1,4 @@
+import Button from "./Button";
 
 const MainContent = () => {
   return (
@@ -9,6 +10,10 @@ const MainContent = () => {
         لورم ایپسوم متن ساختگی با تولید سادگی نام لورم ایپسوم متن ساختگی با
         تولید سادگی نام
       </p>
+      <div className="mt-7 flex items-center gap-3">
+        <Button>دانلود مستقیم</Button>
+        <Button>دانلود از گوگل پلی</Button>
+      </div>
     </div>
   );
 }
