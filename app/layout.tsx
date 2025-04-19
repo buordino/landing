@@ -10,7 +10,7 @@ const vazir = Vazirmatn({
   weight: "400",
 });
 export const metadata: Metadata = {
-  title: "Buordino",
+  title: "بوردینو",
   description: "",
 };
 
