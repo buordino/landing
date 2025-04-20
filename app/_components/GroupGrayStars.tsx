@@ -3,7 +3,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 const GroupGrayStars = () => {
   return (
-    <div className="flex flex-col gap-1">
+    <div className="hidden sm:flex flex-col gap-1">
       <motion.div
         transition={{ duration: "2", repeat: Infinity }}
         animate={{ rotate: 360 }}

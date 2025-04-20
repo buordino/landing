@@ -5,7 +5,6 @@ import Statistics from "./Statistics";
 import GroupGrayStars from "./GroupGrayStars";
 
 const MainContent = () => {
-
   return (
     <div className="basis-[50%] order-1 2lg:order-none">
       <h1 className="font-bold text-center 2lg:text-right text-2xl  md:text-5xl leading-[45px] md:leading-[75px] mb-6">
@@ -32,7 +31,7 @@ const MainContent = () => {
           </div>
         </Button>
       </div>
-      <div className="mt-11 flex items-center gap-2">
+      <div className="mt-11 flex justify-center 2lg:justify-normal items-center gap-2">
         <Statistics size="small" number={1000} title="دانلود" />
         <Statistics size="large" number={1000} title="کاربر راضی" />
       </div>
