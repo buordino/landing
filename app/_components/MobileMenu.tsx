@@ -7,7 +7,7 @@ const MobileMenu = () => {
       <div
         tabIndex={0}
         role="button"
-        className="btn text-white bg-custome-orange-2 "
+        className="btn border-none text-white bg-custome-orange-2 "
       >
         بخش ها
       </div>
