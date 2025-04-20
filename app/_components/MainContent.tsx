@@ -27,6 +27,9 @@ const MainContent = () => {
           </div>
         </Button>
       </div>
+      <div className="mt-9 flex items-center gap-2">
+          
+      </div>
     </div>
   );
 };
