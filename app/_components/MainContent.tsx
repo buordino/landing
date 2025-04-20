@@ -5,6 +5,7 @@ import Statistics from "./Statistics";
 import GroupGrayStars from "./GroupGrayStars";
 
 const MainContent = () => {
+
   return (
     <div className="basis-[50%]">
       <h1 className="font-bold text-5xl leading-[75px] mb-6">
