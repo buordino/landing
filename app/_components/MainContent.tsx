@@ -2,6 +2,7 @@ import Button from "./Button";
 import { TiDownload } from "react-icons/ti";
 import { FaGooglePlay } from "react-icons/fa";
 import Statistics from "./Statistics";
+import GroupGrayStars from "./GroupGrayStars";
 
 const MainContent = () => {
   return (
@@ -9,10 +10,13 @@ const MainContent = () => {
       <h1 className="font-bold text-5xl leading-[75px] mb-6">
         لورم ایپسوم لورم ایپسو ایپسوم لورم لورم ایپررورم
       </h1>
-      <p className="w-[70%] leading-[30px]">
-        لورم ایپسوم متن ساختگی با تولید سادگی نام لورم ایپسوم متن ساختگی با
-        تولید سادگی نام
-      </p>
+      <div className="flex items-center gap-2">
+        <GroupGrayStars />
+        <p className="w-[70%] leading-[30px]">
+          لورم ایپسوم متن ساختگی با تولید سادگی نام لورم ایپسوم متن ساختگی با
+          تولید سادگی نام
+        </p>
+      </div>
       <div className="mt-7 flex items-center gap-3">
         <Button>
           <div className="flex items-center gap-2 ">
