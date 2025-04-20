@@ -4,12 +4,12 @@ interface StatisticsPropsType {
   size: "large" | "small";
 }
 const Statistics = ({ title, number, size }: StatisticsPropsType) => {
-    const padding=`${size==="large" ? " px-4" :" px-2"}`
+  const padding = `${size === "large" ? "w-[140px]" : "w-[90px]"}`;
   return (
     <div
-      className={`text-custome-black h-[100px] bg-[#FFFFFF05] ${padding} flex flex-col rounded-[20px] border-2 border-solid border-[#EEEDED80]`}
+      className={`text-custome-black font-semibold  h-[80px] bg-[#FFFFFF05] ${padding} flex flex-col items-center justify-center rounded-[20px] border-2 border-solid border-[#EEEDED80]`}
     >
-      <span className="block mb-1">
+      <span className="block">
         {number}
         {""}+
       </span>
