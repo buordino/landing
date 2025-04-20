@@ -27,7 +27,7 @@ const MainContent = () => {
           </div>
         </Button>
       </div>
-      <div className="mt-9 flex items-center gap-2">
+      <div className="mt-11 flex items-center gap-2">
         <Statistics size="small" number={1000} title="دانلود" />
         <Statistics size="large" number={1000} title="کاربر راضی" />
       </div>
