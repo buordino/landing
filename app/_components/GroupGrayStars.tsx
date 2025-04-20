@@ -4,7 +4,11 @@ import { motion } from "framer-motion";
 const GroupGrayStars = () => {
   return (
     <div className="flex flex-col gap-1">
-      <motion.div className="relative w-[15px] h-[15px]">
+      <motion.div
+        transition={{ duration: "2", repeat: Infinity }}
+        animate={{ rotate: 360 }}
+        className="relative w-[15px] h-[15px]"
+      >
         <Image
           alt="star-1"
           className="object-cover"
@@ -12,7 +16,11 @@ const GroupGrayStars = () => {
           src={"/images/star-group-1.png"}
         />
       </motion.div>
-      <motion.div className="relative w-[25px] h-[25px]">
+      <motion.div
+        transition={{ duration: "2", repeat: Infinity }}
+        animate={{ rotate: -360 }}
+        className="relative w-[25px] h-[25px]"
+      >
         <Image
           alt="star-2"
           className="object-cover"
