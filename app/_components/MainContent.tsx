@@ -8,17 +8,17 @@ const MainContent = () => {
 
   return (
     <div className="basis-[50%] order-1 2lg:order-none">
-      <h1 className="font-bold text-5xl leading-[75px] mb-6">
+      <h1 className="font-bold text-center 2lg:text-right text-2xl  md:text-5xl leading-[45px] md:leading-[75px] mb-6">
         لورم ایپسوم لورم ایپسو ایپسوم لورم لورم ایپررورم
       </h1>
       <div className="flex items-center gap-2">
         <GroupGrayStars />
-        <p className="w-[70%] leading-[30px]">
+        <p className="text-center text-sm sm:text-base 2lg:text-right 2lg:w-[70%] leading-[30px]">
           لورم ایپسوم متن ساختگی با تولید سادگی نام لورم ایپسوم متن ساختگی با
           تولید سادگی نام
         </p>
       </div>
-      <div className="mt-7 flex items-center gap-3">
+      <div className="mt-7 flex justify-center 2lg:justify-normal items-center gap-3">
         <Button>
           <div className="flex items-center gap-2 ">
             <TiDownload size={15} />
