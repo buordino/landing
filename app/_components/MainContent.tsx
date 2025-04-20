@@ -1,6 +1,7 @@
 import Button from "./Button";
 import { TiDownload } from "react-icons/ti";
 import { FaGooglePlay } from "react-icons/fa";
+import Statistics from "./Statistics";
 
 const MainContent = () => {
   return (
@@ -15,10 +16,9 @@ const MainContent = () => {
       <div className="mt-7 flex items-center gap-3">
         <Button>
           <div className="flex items-center gap-2 ">
-            <TiDownload size={15}  />
+            <TiDownload size={15} />
             <span>دانلود مستقیم</span>
           </div>
-        
         </Button>
         <Button>
           <div className="flex items-center gap-2 ">
@@ -28,7 +28,8 @@ const MainContent = () => {
         </Button>
       </div>
       <div className="mt-9 flex items-center gap-2">
-          
+        <Statistics size="small" number={1000} title="دانلود" />
+        <Statistics size="large" number={1000} title="کاربر راضی" />
       </div>
     </div>
   );
