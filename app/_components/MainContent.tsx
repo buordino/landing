@@ -7,7 +7,7 @@ import GroupGrayStars from "./GroupGrayStars";
 const MainContent = () => {
 
   return (
-    <div className="basis-[50%]">
+    <div className="basis-[50%] order-1 2lg:order-none">
       <h1 className="font-bold text-5xl leading-[75px] mb-6">
         لورم ایپسوم لورم ایپسو ایپسوم لورم لورم ایپررورم
       </h1>

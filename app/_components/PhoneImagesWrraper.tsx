@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const PhoneImagesWrraper = () => {
   return (
-    <div className="basis-[50%]">
+    <div className="basis-full 2lg:basis-[50%]">
       <div className="flex justify-end relative">
         <div className="absolute left-30 top-4 w-[400px] h-[440px] z-[2]">
           <Image
