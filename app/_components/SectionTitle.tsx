@@ -6,7 +6,7 @@ interface SectionTitlePropsType{
 }
 const SectionTitle = ({children}: SectionTitlePropsType) => {
   return (
-    <div className="flex items-center justify-center gap-3">
+    <div className="flex items-center justify-center gap-3 z-40">
       <div>
         <div className="relative size-[10px]">
           <Image
