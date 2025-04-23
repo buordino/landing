@@ -14,10 +14,10 @@ const FeatureTexts = ({ texts, symbol }: FeatureTextsPropsType) => {
         >
           {symbol === "number" ? (
             <span className="font-bold text-custome-orange-2">
-              ({index + 1}
+              {index + 1})
             </span>
           ) : (
-            <div className="relative size-6">
+            <div className="relative w-[24px] h-[20px]">
               <Image
                 fill
                 className="object-center"
