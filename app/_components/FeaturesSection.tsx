@@ -7,8 +7,8 @@ const FeaturesSection = () => {
     <section id="features">
       <SectionTitle>ویژگی ها</SectionTitle>
       <div className="py-22 px-16 md:px-42">
-        <div className="flex items-center justify-between gap-6">
-          <div className="w-[30%]">
+        <div className="flex items-start justify-between gap-6">
+          <div className="w-[30%] pt-14">
             <FeatureTexts
               symbol="star"
               texts={[
@@ -26,7 +26,7 @@ const FeaturesSection = () => {
               src={"/images/Group-41.png"}
             />
           </div>
-          <div className="w-[30%]">
+          <div className="w-[30%] pt-14">
             <FeatureTexts
               symbol="number"
               texts={[

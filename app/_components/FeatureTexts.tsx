@@ -12,6 +12,7 @@ const FeatureTexts = ({ texts, symbol }: FeatureTextsPropsType) => {
           className="font-semibold text-custome-black flex items-start gap-2"
           key={index + 1}
         >
+          <div className="pt-2">
           {symbol === "number" ? (
             <span className="font-bold text-custome-orange-2">
               {index + 1})
@@ -26,6 +27,8 @@ const FeatureTexts = ({ texts, symbol }: FeatureTextsPropsType) => {
               />
             </div>
           )}
+
+          </div>
           <p className="text-justify text-lg leading-[40px]">{text}</p>
         </div>
       ))}
