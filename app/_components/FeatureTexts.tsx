@@ -6,7 +6,7 @@ interface FeatureTextsPropsType {
 }
 const FeatureTexts = ({ texts, symbol }: FeatureTextsPropsType) => {
   return (
-    <div className="flex flex-col gap-5">
+    <div className="flex flex-col gap-6">
       {texts.map((text, index) => (
         <div
           className="font-semibold text-custome-black flex items-start gap-2"
@@ -17,12 +17,12 @@ const FeatureTexts = ({ texts, symbol }: FeatureTextsPropsType) => {
               ({index + 1}
             </span>
           ) : (
-            <div className="relative size-4">
+            <div className="relative size-6">
               <Image
                 fill
                 className="object-center"
                 alt="star-1"
-                src={"/images/small-star-2"}
+                src={"/images/small-star-2.png"}
               />
             </div>
           )}
