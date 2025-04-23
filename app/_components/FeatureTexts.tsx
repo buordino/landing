@@ -26,7 +26,7 @@ const FeatureTexts = ({ texts, symbol }: FeatureTextsPropsType) => {
               />
             </div>
           )}
-          <p>{text}</p>
+          <p className="text-justify text-lg leading-[40px]">{text}</p>
         </div>
       ))}
     </div>
