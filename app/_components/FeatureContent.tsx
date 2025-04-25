@@ -3,7 +3,7 @@ import FeatureTexts from "./FeatureTexts";
 
 const FeatureContent = () => {
   return (
-    <div className="flex flex-col 2lg:flex-row items-start justify-between gap-6">
+    <div className="flex flex-col 2lg:flex-row items-start justify-center gap-14">
       <div className="2lg:w-[30%] pt-2 2lg:pt-18">
         <FeatureTexts
           symbol="star"
@@ -14,10 +14,10 @@ const FeatureContent = () => {
           ]}
         />
       </div>
-      <div className="h-[600px] 2lg:h-[650px] relative w-[300px] mx-auto 2lg:mx-0 2lg:w-[25%]">
+      <div className="h-[600px] 2lg:h-[650px] relative w-[300px] mx-auto 2lg:mx-0 2lg:w-[22.5%]">
         <Image
           fill
-          className="object-center"
+          className="object-fill"
           alt="mobile-img"
           src={"/images/Group-41.png"}
         />
