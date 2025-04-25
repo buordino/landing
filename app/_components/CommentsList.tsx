@@ -1,5 +1,7 @@
+"use client";
 import CommentItems from "./CommentItems";
-
+import { useKeenSlider } from "keen-slider/react";
+import "keen-slider/keen-slider.min.css";
 export interface CommentType {
   avatar: string;
   name: string;
@@ -46,10 +48,23 @@ const defaultComments: CommentType[] = [
 ];
 
 const CommentsList = () => {
+  const [sliderRef] = useKeenSlider({
+    slides: {
+      perView: 3,
+      spacing: 15,
+    },
+  });
   return (
-    <ul className="flex flex-wrap items-center gap-5 justify-between">
+    <ul
+      ref={sliderRef}
+      className=" keen-slider"
+    >
       {defaultComments.map((comment, index) => (
-        <CommentItems key={index + 1} commentItems={comment} />
+        <CommentItems
+          key={index + 1}
+          number={index + 1}
+          commentItems={comment}
+        />
       ))}
     </ul>
   );
