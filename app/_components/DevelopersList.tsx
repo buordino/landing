@@ -1,9 +1,10 @@
+import DeveloperItems from "./DeveloperItems";
 
-export interface DeveloperType{
-    img:string
-    name:string
-    job:string
-    caption:string
+export interface DeveloperType {
+  img: string;
+  name: string;
+  job: string;
+  caption: string;
 }
 const developers: DeveloperType[] = [
   {
@@ -52,8 +53,16 @@ const developers: DeveloperType[] = [
 
 const DevelopersList = () => {
   return (
-    <div>DevelopersList</div>
-  )
-}
+    <ul className="flex items-center gap-2 justify-between flex-wrap">
+      {developers.map((developer, index) => (
+        <DeveloperItems
+          key={index + 1}
+          developer={developer}
+          number={index + 1}
+        />
+      ))}
+    </ul>
+  );
+};
 
-export default DevelopersList
+export default DevelopersList;
