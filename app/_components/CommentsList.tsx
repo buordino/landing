@@ -72,11 +72,7 @@ const CommentsList = () => {
   return (
     <ul ref={sliderRef} className="keen-slider">
       {defaultComments.map((comment, index) => (
-        <CommentItems
-          key={index + 1}
-          number={index + 1}
-          commentItems={comment}
-        />
+        <CommentItems key={index + 1} commentItems={comment} />
       ))}
     </ul>
   );

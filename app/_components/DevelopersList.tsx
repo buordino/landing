@@ -1,4 +1,9 @@
+"use client";
+import { useState } from "react";
 import DeveloperItems from "./DeveloperItems";
+import { useKeenSlider } from "keen-slider/react";
+import "keen-slider/keen-slider.min.css";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
 
 export interface DeveloperType {
   img: string;
@@ -52,16 +57,51 @@ const developers: DeveloperType[] = [
 ];
 
 const DevelopersList = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [loaded, setLoaded] = useState(false);
+  const [sliderRef, instanceRef] = useKeenSlider<HTMLUListElement>({
+    initial: 0,
+    slideChanged(slider) {
+      setCurrentSlide(slider.track.details.rel);
+    },
+    created() {
+      setLoaded(true);
+    },
+    slides: {
+      perView: 3,
+      spacing: 25,
+    },
+  });
   return (
-    <ul className="flex items-center gap-2 justify-between flex-wrap">
-      {developers.map((developer, index) => (
-        <DeveloperItems
-          key={index + 1}
-          developer={developer}
-          number={index + 1}
-        />
-      ))}
-    </ul>
+    <div className="navigation-wrapper">
+      <ul ref={sliderRef} className="keen-slider">
+        {developers.map((developer, index) => (
+          <DeveloperItems
+            key={index + 1}
+            developer={developer}
+          />
+        ))}
+      </ul>
+      {loaded && instanceRef.current && (
+        <>
+          <button
+            onClick={(e) => e.stopPropagation() || instanceRef.current?.next()}
+            disabled={
+              currentSlide ===
+              instanceRef.current.track.details.slides.length - 1
+            }
+          >
+            <FaChevronRight />
+          </button>
+          <button
+            onClick={(e) => e.stopPropagation() || instanceRef.current?.prev()}
+            disabled={currentSlide === 0}
+          >
+          <FaChevronLeft />
+          </button>
+        </>
+      )}
+    </div>
   );
 };
 
