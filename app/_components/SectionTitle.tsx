@@ -1,14 +1,14 @@
 import Image from "next/image";
-import { ReactNode } from "react"
+import { ReactNode } from "react";
 
-interface SectionTitlePropsType{
-    children:ReactNode
+interface SectionTitlePropsType {
+  children: ReactNode;
 }
-const SectionTitle = ({children}: SectionTitlePropsType) => {
+const SectionTitle = ({ children }: SectionTitlePropsType) => {
   return (
-    <div className="relative flex items-center justify-center gap-3 z-40">
+    <div className="relative flex  justify-center gap-5 z-40">
       <div>
-        <div className="relative size-[10px]">
+        <div className="relative size-[10px] ">
           <Image
             alt="img-1"
             src={"/images/small-star-1.png"}
@@ -25,7 +25,7 @@ const SectionTitle = ({children}: SectionTitlePropsType) => {
           />
         </div>
       </div>
-      <h2 className="text-custome-black font-semibold text-2xl">{children}</h2>
+      <h2 className="text-custome-black font-semibold text-2xl pt-2">{children}</h2>
       <div>
         <div className="relative size-[10px] mr-[6.6px]">
           <Image
@@ -48,4 +48,4 @@ const SectionTitle = ({children}: SectionTitlePropsType) => {
   );
 };
 
-export default SectionTitle
+export default SectionTitle;
