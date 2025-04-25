@@ -3,7 +3,7 @@ import { useState } from "react";
 import DeveloperItems from "./DeveloperItems";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
+import Arrow from "./Arrow";
 
 export interface DeveloperType {
   img: string;
@@ -76,29 +76,26 @@ const DevelopersList = () => {
     <div className="navigation-wrapper">
       <ul ref={sliderRef} className="keen-slider">
         {developers.map((developer, index) => (
-          <DeveloperItems
-            key={index + 1}
-            developer={developer}
-          />
+          <DeveloperItems key={index + 1} developer={developer} />
         ))}
       </ul>
       {loaded && instanceRef.current && (
         <>
-          <button
-            onClick={(e) => e.stopPropagation() || instanceRef.current?.next()}
-            disabled={
-              currentSlide ===
-              instanceRef.current.track.details.slides.length - 1
-            }
-          >
-            <FaChevronRight />
-          </button>
-          <button
-            onClick={(e) => e.stopPropagation() || instanceRef.current?.prev()}
-            disabled={currentSlide === 0}
-          >
-          <FaChevronLeft />
-          </button>
+          <>
+            <Arrow
+              left
+              onClick={() => instanceRef.current?.prev()}
+              disabled={currentSlide === 0}
+            />
+
+            <Arrow
+              onClick={() => instanceRef.current?.next()}
+              disabled={
+                currentSlide ===
+                instanceRef.current.track.details.slides.length - 1
+              }
+            />
+          </>
         </>
       )}
     </div>
