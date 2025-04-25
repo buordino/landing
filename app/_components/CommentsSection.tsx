@@ -6,7 +6,7 @@ const CommentsSection = () => {
     <section>
         <SectionTitle>نظرات کاربران</SectionTitle>
       <div className="py-12 px-16 md:px-42">
-        <div className="mt-18">
+        <div className="mt-2">
           <CommentsList />
         </div>
       </div>

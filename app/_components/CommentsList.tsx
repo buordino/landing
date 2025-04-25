@@ -47,7 +47,7 @@ const defaultComments: CommentType[] = [
 
 const CommentsList = () => {
   return (
-    <ul className="flex flex-wrap items-center gap-8 justify-between">
+    <ul className="flex flex-wrap items-center gap-5 justify-between">
       {defaultComments.map((comment, index) => (
         <CommentItems key={index + 1} commentItems={comment} />
       ))}
