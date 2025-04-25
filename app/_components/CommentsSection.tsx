@@ -5,8 +5,8 @@ const CommentsSection = () => {
   return (
     <section>
         <SectionTitle>نظرات کاربران</SectionTitle>
-      <div className="py-12 px-16 md:px-42">
-        <div className="mt-2">
+      <div className="py-12 px-8 2lg:px-14">
+        <div className="mt-2 w-full">
           <CommentsList />
         </div>
       </div>

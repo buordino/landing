@@ -10,7 +10,7 @@ const CommentItems = ({ commentItems, number }: CommentItemsPropsType) => {
   const { avatar, comment, name } = commentItems;
   return (
     <li
-      className={`w-[30%] py-6 pl-5 pr-6 rounded-[30px] border border-solid border-custome-orange-1 text-custome-black keen-slider__slide  ${`number-slide${number}`}`}
+      className={`w-[30%] py-6 pl-5 pr-6 rounded-[25px] border border-solid border-custome-orange-1 text-custome-black keen-slider__slide  ${`number-slide${number}`}`}
     >
       <div className="flex items-center gap-3 mb-2">
         <Image
@@ -22,7 +22,7 @@ const CommentItems = ({ commentItems, number }: CommentItemsPropsType) => {
         />
         <span className="font-semibold">{name}</span>
       </div>
-      <p>{comment}</p>
+      <p className="text-justify">{comment}</p>
     </li>
   );
 };

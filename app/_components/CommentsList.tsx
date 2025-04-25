@@ -48,17 +48,15 @@ const defaultComments: CommentType[] = [
 ];
 
 const CommentsList = () => {
-  const [sliderRef] = useKeenSlider({
+  const [sliderRef] = useKeenSlider<HTMLUListElement>({
     slides: {
       perView: 3,
-      spacing: 15,
+      spacing: 20,
     },
+    loop: true,
   });
   return (
-    <ul
-      ref={sliderRef}
-      className=" keen-slider"
-    >
+    <ul ref={sliderRef} className=" keen-slider">
       {defaultComments.map((comment, index) => (
         <CommentItems
           key={index + 1}
