@@ -22,7 +22,7 @@ const CommentItems = ({ commentItems, number }: CommentItemsPropsType) => {
         />
         <span className="font-semibold">{name}</span>
       </div>
-      <p className="text-justify">{comment}</p>
+      <p className="text-justify leading-[32px]">{comment}</p>
     </li>
   );
 };

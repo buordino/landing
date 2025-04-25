@@ -54,9 +54,23 @@ const CommentsList = () => {
       spacing: 20,
     },
     loop: true,
+    breakpoints: {
+      "(max-width: 769px)": {
+        slides: {
+          perView: 2,
+          spacing: 20,
+        },
+      },
+      "(max-width: 550px)": {
+        slides: {
+          perView: 1,
+          spacing: 20,
+        },
+      },
+    },
   });
   return (
-    <ul ref={sliderRef} className=" keen-slider">
+    <ul ref={sliderRef} className="keen-slider">
       {defaultComments.map((comment, index) => (
         <CommentItems
           key={index + 1}
