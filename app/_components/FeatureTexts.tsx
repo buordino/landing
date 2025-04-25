@@ -13,23 +13,24 @@ const FeatureTexts = ({ texts, symbol }: FeatureTextsPropsType) => {
           key={index + 1}
         >
           <div className="pt-2">
-          {symbol === "number" ? (
-            <span className="font-bold text-custome-orange-2">
-              {index + 1})
-            </span>
-          ) : (
-            <div className="relative w-[24px] h-[20px]">
-              <Image
-                fill
-                className="object-center"
-                alt="star-1"
-                src={"/images/small-star-2.png"}
-              />
-            </div>
-          )}
-
+            {symbol === "number" ? (
+              <span className="font-bold text-custome-orange-2">
+                {index + 1})
+              </span>
+            ) : (
+              <div className="relative w-[24px] h-[20px]">
+                <Image
+                  fill
+                  className="object-center"
+                  alt="star-1"
+                  src={"/images/small-star-2.png"}
+                />
+              </div>
+            )}
           </div>
-          <p className="text-justify text-lg leading-[40px]">{text}</p>
+          <p className="text-justify text-base sm:text-lg leading-[40px]">
+            {text}
+          </p>
         </div>
       ))}
     </div>
