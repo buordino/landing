@@ -8,9 +8,9 @@ const FeaturesSection = () => {
       <SectionTitle>ویژگی ها</SectionTitle>
       <div className="relative">
         <div className="absolute w-[100%] bg-gradient-to-b from-custome-orange-1 to-circle-color blur-[125px]   left-0 right-0 top-0 bottom-[25%] mx-auto rounded-b-[100%]"></div>
-        <div className="relative py-22 px-16 md:px-42">
-          <div className="flex items-start justify-between gap-6">
-            <div className="w-[30%] pt-18">
+        <div className="relative py-22 px-5 sm:px-12 2lg:px-42">
+          <div className="flex flex-col 2lg:flex-row items-start justify-between gap-6">
+            <div className="2lg:w-[30%] pt-2 2lg:pt-18">
               <FeatureTexts
                 symbol="star"
                 texts={[
@@ -20,7 +20,7 @@ const FeaturesSection = () => {
                 ]}
               />
             </div>
-            <div className="h-[600px] relative w-[25%]">
+            <div className="h-[600px] relative w-[300px] mx-auto 2lg:mx-0 2lg:w-[25%]">
               <Image
                 fill
                 className="object-center"
@@ -28,7 +28,7 @@ const FeaturesSection = () => {
                 src={"/images/Group-41.png"}
               />
             </div>
-            <div className="w-[30%] pt-18">
+            <div className="2lg:w-[30%] pt-6 2lg:pt-18">
               <FeatureTexts
                 symbol="number"
                 texts={[
