@@ -57,13 +57,10 @@ const developers: DeveloperType[] = [
 ];
 
 const DevelopersList = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
   const [loaded, setLoaded] = useState(false);
   const [sliderRef, instanceRef] = useKeenSlider<HTMLUListElement>({
     initial: 0,
-    slideChanged(slider) {
-      setCurrentSlide(slider.track.details.rel);
-    },
+
     created() {
       setLoaded(true);
     },
@@ -71,9 +68,24 @@ const DevelopersList = () => {
       perView: 3,
       spacing: 25,
     },
+    loop: true,
+    breakpoints: {
+      "(max-width: 850px)": {
+        slides: {
+          perView: 2,
+          spacing: 20,
+        },
+      },
+      "(max-width: 550px)": {
+        slides: {
+          perView: 1,
+          spacing: 20,
+        },
+      },
+    },
   });
   return (
-    <div className="navigation-wrapper">
+    <div className="navigation-wrapper relative">
       <ul ref={sliderRef} className="keen-slider">
         {developers.map((developer, index) => (
           <DeveloperItems key={index + 1} developer={developer} />
@@ -82,19 +94,9 @@ const DevelopersList = () => {
       {loaded && instanceRef.current && (
         <>
           <>
-            <Arrow
-              left
-              onClick={() => instanceRef.current?.prev()}
-              disabled={currentSlide === 0}
-            />
+            <Arrow left onClick={() => instanceRef.current?.prev()} />
 
-            <Arrow
-              onClick={() => instanceRef.current?.next()}
-              disabled={
-                currentSlide ===
-                instanceRef.current.track.details.slides.length - 1
-              }
-            />
+            <Arrow onClick={() => instanceRef.current?.next()} />
           </>
         </>
       )}

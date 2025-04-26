@@ -22,7 +22,7 @@ const DeveloperItems = ({ developer }: DeveloperItemsPropsType) => {
       </div>
       <h2 className="mt-2 text-lg font-semibold">{name}</h2>
       <span className="mt-2">{job}</span>
-      <p className="mt-1 font-[100]">{caption}</p>
+      <p className="mt-1 font-[100] text-justify">{caption}</p>
     </li>
   );
 };
