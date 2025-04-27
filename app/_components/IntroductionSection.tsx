@@ -9,6 +9,7 @@ const IntroductionSection = () => {
         <div className="flex justify-center flex-col 2lg:flex-row items-center 2lg:justify-between gap-10 sm:gap-20">
           <MainContent />
           <PhoneImagesWrraper />
+          <h2 className="dark:text-yellow-300">hello</h2>
         </div>
       </div>
     </section>
