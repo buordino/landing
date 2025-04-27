@@ -11,7 +11,7 @@ const Footer = () => {
       <div className="flex flex-col  items-center justify-center">
         <Logo />
         <div className="mt-6">
-          <Navigation />
+          <Navigation isShow={false} />
         </div>
         <div className="mt-8">
           <FooterAppsLinks />

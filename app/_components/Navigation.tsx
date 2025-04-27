@@ -6,9 +6,12 @@ export const navigationItems = [
   { text: "ویژگی ها", href: "#features" },
   { text: "درباره برنامه", href: "/" },
 ];
-const Navigation = () => {
+interface NavigationPropsType {
+  isShow?: boolean;
+}
+const Navigation = ({ isShow}: NavigationPropsType) => {
   return (
-    <div role="tablist" className="tabs">
+    <div role="tablist" className="tabs justify-center">
       {navigationItems.map((nav, index) => (
         <Link
           role="tab"
@@ -16,7 +19,7 @@ const Navigation = () => {
           href={nav.href}
           key={index}
         >
-          {index === 0 && (
+          {index === 0 && isShow && (
             <div className="relative size-3.5 ml-1">
               <Image
                 className="object-center"
