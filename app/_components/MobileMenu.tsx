@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const MobileMenu = () => {
   return (
-    <div className="dropdown !cursor-pointer">
+    <div className="dropdown dropdown-center !cursor-pointer">
       <div
         tabIndex={0}
         role="button"
