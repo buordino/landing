@@ -15,7 +15,7 @@ const Navigation = ({ isShow}: NavigationPropsType) => {
       {navigationItems.map((nav, index) => (
         <Link
           role="tab"
-          className=" tab !text-custome-black hover:!text-custome-orange-2 font-[600] "
+          className=" tab dark:!text-white !text-custome-black hover:!text-custome-orange-2 font-[600] "
           href={nav.href}
           key={index}
         >
