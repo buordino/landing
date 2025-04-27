@@ -12,7 +12,7 @@ const FooterAppsLinks = () => {
       {apps.map((app, index) => (
         <li key={index + 1}>
           <Link
-            className={`transition-all duration-150 ${
+            className={`transition-all duration-150 dark:text-white ${
               app.color === "#59168b"
                 ? "hover:text-[#59168b]"
                 : "hover:text-[#e7000b]"

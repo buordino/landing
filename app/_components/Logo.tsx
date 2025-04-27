@@ -1,8 +1,5 @@
-
 const Logo = () => {
-  return (
-    <div>Logo</div>
-  )
-}
+  return <div className="dark:text-white">Logo</div>;
+};
 
-export default Logo
+export default Logo;

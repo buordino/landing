@@ -9,7 +9,7 @@ const Button = ({ children, onClick }: ButtonPropsType) => {
   return (
     <button
       onClick={onClick}
-      className="btn btn-sm md:btn-md lg:btn-lg border-none shadow-none text text-[13px] md:text-[15px]  bg-custome-orange-2 text-black rounded-[14.5px] "
+      className="btn btn-sm md:btn-md lg:btn-lg border-none shadow-none text text-[13px] md:text-[15px] dark:text-white dark:font-light  bg-custome-orange-2 text-black rounded-[14.5px] "
     >
       {children}
     </button>

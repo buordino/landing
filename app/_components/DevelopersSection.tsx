@@ -3,7 +3,7 @@ import SectionTitle from "./SectionTitle";
 
 const DevelopersSection = () => {
   return (
-    <section id="developers">
+    <section id="developers" className="dark:bg-custome-black">
       <SectionTitle>توسعه دهندگان</SectionTitle>
       <div className="py-22 px-12  2lg:px-42">
         <div>

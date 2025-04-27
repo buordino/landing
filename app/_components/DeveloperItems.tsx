@@ -9,7 +9,7 @@ const DeveloperItems = ({ developer }: DeveloperItemsPropsType) => {
   const { caption, img, job, name } = developer;
   return (
     <li
-      className={`keen-slider__slide  px-4 pt-2 pb-7 rounded-[35px] border border-solid border-[#B6ADAD] text-custome-black`}
+      className={`keen-slider__slide dark:text-white  px-4 pt-2 pb-7 rounded-[35px] border border-solid border-[#B6ADAD] text-custome-black`}
     >
       <div className="flex items-center justify-center">
         <Image

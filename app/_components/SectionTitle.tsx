@@ -25,7 +25,7 @@ const SectionTitle = ({ children }: SectionTitlePropsType) => {
           />
         </div>
       </div>
-      <h2 className="text-custome-black font-semibold text-xl sm:text-2xl pt-2">{children}</h2>
+      <h2 className="text-custome-black dark:text-white font-semibold text-xl sm:text-2xl pt-2">{children}</h2>
       <div>
         <div className="relative size-[10px] mr-[6.6px]">
           <Image
