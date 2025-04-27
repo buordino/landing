@@ -1,18 +1,12 @@
 import FooterAppsLinks from "./FooterAppsLinks";
-import FooterStar from "./FooterStar";
+import FooterStarsWrraper from "./FooterStarsWrraper";
 import Logo from "./Logo";
 import Navigation from "./Navigation";
 
 const Footer = () => {
   return (
     <footer className="pt-16 pb-20 border-t border-solid border-[#00000033]/60 relative">
-      <FooterStar left="8%" top="15%" />
-      <FooterStar left="14.5%" top="45%" />
-      <FooterStar left="25%" top="80%" />
-      <FooterStar left="45%" top="70%" />
-      <FooterStar left="65%" top="55%" />
-      <FooterStar left="80%" top="15%" />
-      <FooterStar left="90%" top="45%" />
+      <FooterStarsWrraper />
 
       <div className="flex flex-col  items-center justify-center">
         <Logo />
