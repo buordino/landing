@@ -9,7 +9,7 @@ const FeatureTexts = ({ texts, symbol }: FeatureTextsPropsType) => {
     <div className="flex flex-col gap-6">
       {texts.map((text, index) => (
         <div
-          className="font-semibold text-custome-black flex items-start gap-2"
+          className="font-semibold dark:font-normal text-custome-black dark:text-white flex items-start gap-2"
           key={index + 1}
         >
           <div className="pt-2">
@@ -28,7 +28,7 @@ const FeatureTexts = ({ texts, symbol }: FeatureTextsPropsType) => {
               </div>
             )}
           </div>
-          <p className="text-justify text-base leading-[40px]">
+          <p className="text-justify text-sm   sm:text-base leading-[40px]">
             {text}
           </p>
         </div>
