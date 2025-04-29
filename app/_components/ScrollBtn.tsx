@@ -1,5 +1,5 @@
 "use client";
-
+import { AnimatePresence, motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import { FaChevronUp } from "react-icons/fa";
 
@@ -30,15 +30,23 @@ const ScrollBtn = () => {
     });
   };
 
-  if (!visible) return null;
+ 
 
   return (
-    <button
-      onClick={scrollToTop}
-      className="w-[52px] h-[52px] z-[1000] shadow-md fixed cursor-pointer left-4 bottom-20 bg-custome-orange-2 flex justify-center items-center rounded-[100%]"
-    >
-      <FaChevronUp fill="white" size={22} />
-    </button>
+    <AnimatePresence>
+      {visible && (
+        <motion.button
+          transition={{ duration: "0.3" }}
+          initial={{ x: -20, opacity: 0 }}
+          animate={{ x: 20, opacity: 1 }}
+          exit={{ x: -20, opacity: 0 }}
+          onClick={scrollToTop}
+          className="w-[52px] h-[52px] z-[1000] shadow-md fixed cursor-pointer left-4 bottom-20 bg-custome-orange-2 flex justify-center items-center rounded-[100%]"
+        >
+          <FaChevronUp fill="white" size={22} />
+        </motion.button>
+      )}
+    </AnimatePresence>
   );
 };
 
