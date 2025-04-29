@@ -28,7 +28,7 @@ const FeatureTexts = ({ texts, symbol }: FeatureTextsPropsType) => {
               </div>
             )}
           </div>
-          <p className="text-justify text-base sm:text-lg leading-[40px]">
+          <p className="text-justify text-base leading-[40px]">
             {text}
           </p>
         </div>
