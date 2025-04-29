@@ -22,7 +22,11 @@ interface RootLayoutPropsType {
 export default function RootLayout({ children }: RootLayoutPropsType) {
   return (
     <html lang="fa" dir="rtl" className="scroll-smooth">
-      <body className={`${vazir.className} overflow-x-hidden antialiased `}>
+      <body
+        suppressHydrationWarning
+        style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
+        className={`${vazir.className} overflow-y-auto overflow-x-hidden antialiased `}
+      >
         <Header />
         <main>{children}</main>
         <Footer />
