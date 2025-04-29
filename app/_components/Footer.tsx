@@ -15,7 +15,7 @@ const Footer = () => {
         <div className="mt-6">
           <Navigation isShow={false} />
         </div>
-        <div className="mt-8">
+        <div className="mt-8 z-[2]">
           <FooterAppsLinks />
         </div>
       </div>
