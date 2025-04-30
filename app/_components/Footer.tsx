@@ -6,7 +6,7 @@ import Navigation from "./Navigation";
 
 const Footer = () => {
   return (
-    <footer className="w-full pt-16 pb-20 dark:bg-custome-black border-t border-solid dark:border-white/15 border-[#00000033] relative ">
+    <footer className="w-full mt-12 pt-14 pb-20 dark:bg-custome-black relative ">
       <FooterStarsWrraper />
       <FooterLines />
 
