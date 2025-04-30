@@ -6,7 +6,8 @@ import Navigation from "./Navigation";
 
 const Footer = () => {
   return (
-    <footer className="w-full mt-12 pt-14 pb-20 dark:bg-custome-black relative ">
+  
+    <footer className="w-full pt-14 pb-20 dark:bg-custome-black relative ">
       <FooterStarsWrraper />
       <FooterLines />
 
@@ -20,6 +21,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
+
   );
 };
 
