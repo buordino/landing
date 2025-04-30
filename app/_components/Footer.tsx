@@ -6,10 +6,9 @@ import Navigation from "./Navigation";
 
 const Footer = () => {
   return (
-  
-    <footer className="w-full pt-14 pb-20 dark:bg-custome-black relative ">
-      <FooterStarsWrraper />
+    <footer className="w-full pt-14 pb-20 dark:bg-custome-black relative  border-t border-solid border-[#00000033] dark:border-white/15 md:border-none">
       <FooterLines />
+      <FooterStarsWrraper />
 
       <div className="flex flex-col items-center justify-center ">
         <Logo />
@@ -21,7 +20,6 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-
   );
 };
 

@@ -1,7 +1,7 @@
 
 const FooterLines = () => {
   return (
-    <div className="absolute inset-0 z-[0]">
+    <div className="absolute inset-0 z-[0] hidden md:block">
       <div className="flex items-center  justify-between absolute inset-0">
         {Array.from({ length: 22 }).map((_, index) => (
           <div

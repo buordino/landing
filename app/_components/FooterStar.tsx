@@ -8,6 +8,7 @@ interface FooterStarPropsType {
 const FooterStar = ({ left, top }: FooterStarPropsType) => {
   return (
     <motion.span
+    drag
       animate={{
         rotate: [0, 180, 360],
         x: [0, 10, 0, -10, 0],
