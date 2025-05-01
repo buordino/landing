@@ -5,7 +5,7 @@ import ThemeSwitcher from "./ThemeSwitcher";
 
 const Header = () => {
   return (
-    <header className="dark:bg-custome-black">
+    <header className="dark:bg-custome-black bg-white">
       <div className="flex justify-between md:justify-normal items-center px-6 sm:px-12 md:px-28 py-4">
         <div>
           <ThemeSwitcher />

@@ -7,12 +7,12 @@ import GroupGrayStars from "./GroupGrayStars";
 const MainContent = () => {
   return (
     <div className="basis-[50%] order-1 2lg:order-none">
-      <h1 className="font-bold dark:text-white text-center 2lg:text-right text-2xl  md:text-5xl leading-[45px] md:leading-[75px] mb-6">
+      <h1 className="font-bold text-black dark:text-white text-center 2lg:text-right text-2xl  md:text-5xl leading-[45px] md:leading-[75px] mb-6">
         لورم ایپسوم لورم ایپسو ایپسوم لورم لورم ایپررورم
       </h1>
       <div className="flex items-center gap-2">
         <GroupGrayStars />
-        <p className="text-center dark:text-[#FFFFFF] text-sm sm:text-base 2lg:text-right 2lg:w-[70%] leading-[30px]">
+        <p className="text-center text-black dark:text-[#FFFFFF] text-sm sm:text-base 2lg:text-right 2lg:w-[70%] leading-[30px]">
           لورم ایپسوم متن ساختگی با تولید سادگی نام لورم ایپسوم متن ساختگی با
           تولید سادگی نام
         </p>
