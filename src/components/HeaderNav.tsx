@@ -7,7 +7,7 @@ const navItems = [
 ];
 const HeaderNav = () => {
   return (
-    <nav>
+    <nav className="hidden md:block">
       <div className="rounded-full border-solid border-2 border-light-primary bg-dark-sky px-8 py-6">
         <ul className="flex flex-row items-center justify-between gap-[60px] pb-1">
           <li>
