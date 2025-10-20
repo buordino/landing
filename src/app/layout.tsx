@@ -21,7 +21,7 @@ export default function RootLayout({
       <body className="bg-background text-white min-h-screen flex flex-col overflow-x-hidden">
         <Header />
         <main className="flex-grow">
-          <div className="max-w-[1300px] mx-auto px-4 lg:px-[75px]">
+          <div className="max-w-[1200px] mx-auto px-4 lg:px-[75px]">
             {children}
           </div>
         </main>
