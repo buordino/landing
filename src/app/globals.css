@@ -1,0 +1,22 @@
+@import "tailwindcss";
+@plugin "daisyui";
+@font-face {
+  font-family: "EstedadVF";
+  src: url("/fonts/Estedad[KSHD,wght].ttf") format("truetype-variations");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0600-06FF, U+0750-077F, U+FB50-FDFF, U+FE70-FEFF;
+}
+
+body {
+  font-family: "EstedadVF", sans-serif;
+}
+
+@theme {
+  --color-background: #3C4866;
+  --color-primary: #99aedb;
+  --color-light-primary: #809ad2;
+  --color-white: #f8f1e9;
+  --color-secondary: #5c74a7;
+}
