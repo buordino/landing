@@ -15,8 +15,9 @@ body {
 
 @theme {
   --color-background: #3C4866;
-  --color-primary: #99aedb;
-  --color-light-primary: #809ad2;
-  --color-white: #f8f1e9;
-  --color-secondary: #5c74a7;
+  --color-primary: #99AEDB;
+  --color-light-primary: #809AD2;
+  --color-white: #F8F1E9;
+  --color-secondary: #5C74A7;
+  --color-dark-sky: #516084;
 }
