@@ -13,15 +13,15 @@ const HeaderNav = () => {
           <li>
             <Link
               href={"/"}
-              className="bg-[#5C74A7] mt-1 pb-2.5 pt-1.5 px-5 rounded-full"
+              className="bg-light-sky mt-1 pb-2.5 pt-1.5 px-5 rounded-full shadow-3xl"
             >
-              <span className="text-[16px] font-medium">downlaod</span>
+              <span className="text-[16px] font-normal">downlaod</span>
             </Link>
           </li>
           {navItems.map((navItem, index) => (
             <li key={index}>
               <Link href={navItem.href}>
-                <span className="text-[16px]font-normal">{navItem.label}</span>
+                <span className="text-[16px] font-normal">{navItem.label}</span>
               </Link>
             </li>
           ))}

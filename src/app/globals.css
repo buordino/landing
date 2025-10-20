@@ -20,4 +20,6 @@ body {
   --color-white: #F8F1E9;
   --color-secondary: #5C74A7;
   --color-dark-sky: #516084;
+  --color-light-sky:#A8C4FF;
+  --shadow-3xl:1px 0px 50px 2px #0000004D;
 }
