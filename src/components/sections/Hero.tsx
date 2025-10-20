@@ -1,3 +1,4 @@
+import Image from "next/image";
 import CustomButton from "../ui/CustomButton";
 
 const Hero = () => {
@@ -17,7 +18,26 @@ const Hero = () => {
           </p>
           <CustomButton className="w-44 h-13">بزن بریم!</CustomButton>
         </div>
-        <div className="bg-yellow-500 basis-2xs">left</div>
+        <div className="basis-2xs">
+          <div className="relative w-full flex flex-row justify-end">
+            <div className="w-full h-[490px] absolute left-8 -top-8">
+              <Image
+                src={"/images/Hero-iPhone-Right.png"}
+                alt="iPhone-Image-1"
+                fill
+                className="object-cover z-10"
+              />
+            </div>{" "}
+            <div className="w-full h-[490px] absolute -left-3 -top-8">
+              <Image
+                src={"/images/Hero-iPhone-Left.png"}
+                alt="iPhone-Image-1"
+                fill
+                className="object-cover"
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
