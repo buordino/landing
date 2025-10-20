@@ -21,7 +21,7 @@ const HeaderNav = () => {
           {navItems.map((navItem, index) => (
             <li key={index}>
               <Link href={navItem.href}>
-                <span className="text-[16px] font-normal">{navItem.label}</span>
+                <span className="text-[16px] font-normal text-center">{navItem.label}</span>
               </Link>
             </li>
           ))}

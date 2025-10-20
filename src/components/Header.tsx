@@ -5,7 +5,7 @@ import Logo from "./ui/Logo";
 const Header = () => {
   return (
     <header>
-      <div className="px-4 lg:px-[75px] pt-2 lg:pt-6 flex flex-row items-center justify-between max-w-[1300px] mx-auto">
+      <div className="px-4 lg:px-[75px] pt-2 md:pt-6 flex flex-row items-center justify-between gap-4 max-w-[1300px] mx-auto">
         <Logo />
         <HeaderNav />
         <ThemeController />
