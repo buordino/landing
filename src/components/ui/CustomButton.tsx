@@ -1,4 +1,6 @@
 "use client";
+
+import { cn } from "@/lib/utils";
 import { CustomButtonPropsType } from "@/types/buttonTypes";
 
 const CustomButton = ({
@@ -13,7 +15,10 @@ const CustomButton = ({
         e.stopPropagation();
         onClick?.();
       }}
-      className="bg-primary text-background font-bold w-44 h-12 rounded-xl text-xl cursor-pointer flex items-center justify-center"
+      className={cn(
+        "bg-primary text-background font-bold rounded-xl text-xl cursor-pointer flex items-center justify-center leading-none",
+        className
+      )}
     >
       <span className="relative top-[-5px] leading-none">{children}</span>
     </button>

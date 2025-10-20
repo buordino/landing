@@ -15,7 +15,7 @@ const Hero = () => {
             قرعه‌کشی‌های هیجان‌انگیز شرکت کنی. فرقی نداره چند سالته؛ از ۱۰ سال
             تا ۸۰ سال، اینجا همه می‌تونن بازی کنن و برنده بشن!
           </p>
-          <CustomButton>بزن بریم!</CustomButton>
+          <CustomButton className="w-44 h-13">بزن بریم!</CustomButton>
         </div>
         <div className="bg-yellow-500 basis-2xs">left</div>
       </div>
