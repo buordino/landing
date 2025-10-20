@@ -1,5 +1,7 @@
 @import "tailwindcss";
-@plugin "daisyui";
+@plugin "daisyui" {
+  themes: false;
+}
 @font-face {
   font-family: "EstedadVF";
   src: url("/fonts/Estedad[KSHD,wght].ttf") format("truetype-variations");
@@ -15,7 +17,7 @@ body {
 
 @theme {
   --color-background: #3C4866;
-  --color-primary: #99AEDB;
+  --color-primary: rgba(153, 174, 219, 1);
   --color-light-primary: #809AD2;
   --color-white: #F8F1E9;
   --color-secondary: #5C74A7;
@@ -23,3 +25,4 @@ body {
   --color-light-sky:#A8C4FF;
   --shadow-3xl:1px 0px 50px 2px #0000004D;
 }
+
