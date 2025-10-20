@@ -4,8 +4,6 @@ const SunIcon = ({ className }: IconPropsType) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="45"
-      height="45"
       viewBox="0 0 65 65"
       fill="none"
       className={className}

@@ -8,10 +8,10 @@ const ThemeController = () => {
       <input type="checkbox" className="theme-controller" value="synthwave" />
 
       {/* sun icon */}
-      <SunIcon className="stroke-white swap-off" />
+      <SunIcon className="stroke-white swap-off w-[35px] h-[35px] sm:h-10 sm:w-10" />
 
       {/* moon icon */}
-      <MoonIcon className="swap-on h-10 w-10 fill-current" />
+      <MoonIcon className="swap-on w-[35px] h-[35px] sm:h-10 sm:w-10 fill-current" />
     </label>
   );
 };
