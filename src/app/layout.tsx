@@ -5,6 +5,9 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "بـردیـنـو",
   description: "با بـردیـنـو، بازی کن، امتیاز بگیر، برنده شو!",
+  icons:{
+    icon:"/images/logo.png"
+  }
 };
 
 export default function RootLayout({
