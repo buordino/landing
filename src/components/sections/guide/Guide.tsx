@@ -11,7 +11,6 @@ const Guide = () => {
             <div className="basis-lg">
               <GuidesList />
             </div>
-            <div className="bg-yellow-400">left</div>
           </div>
         </div>
       </div>

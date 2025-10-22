@@ -10,8 +10,10 @@ const guides: GuideType[] = [
     icon: <GamePadIcon className="stroke-white fill-none w-8 h-8" />,
     description: (
       <p className="text-white font-medium">
-        این بخش از اپ تو میتونی امتیاز بگیری و باهاش توی قرعه کشی ها شرکت کنی با
-        بازی کردن امتیاز میگیری و اون امیتاز ها تبدیل به کوپن میشن
+        این بخش از اپ تو میتونی امتیاز بگیری و باهاش توی{" "}
+        <span className="text-background">قرعه کشی ها</span> شرکت کنی با{" "}
+        <span className="text-background">بازی کردن</span> امتیاز میگیری و اون
+        امیتاز ها تبدیل به <span className="text-background">کوپن</span> میشن
       </p>
     ),
   },
@@ -20,8 +22,11 @@ const guides: GuideType[] = [
     icon: <WalletIcon className="fill-none stroke-white w-8 h-8" />,
     description: (
       <p className="text-white font-medium">
-        اینجا تو موجودیتو میبینی و میتونی هم واریز کنی و هم واریزی هاتو ببینی با
-        واریز کردن میتونی کوپن بخری و این راه سریع و اسون برای خرید کوپنه
+        اینجا تو <span className="text-background">موجودیتو</span> میبینی و
+        میتونی هم <span className="text-background">واریز</span> کنی و هم واریزی
+        هاتو ببینی با واریز کردن میتونی{" "}
+        <span className="text-background">کوپن بخری</span> و این راه{" "}
+        <span className="text-background">سریع و اسون</span> برای خرید کوپنه
       </p>
     ),
   },
@@ -30,8 +35,11 @@ const guides: GuideType[] = [
     icon: <UsersIcon className="stroke-white fill-none w-8 h-8" />,
     description: (
       <p className="text-white font-medium">
-        میتونی دوستاتو دعوت کنی و با دعوت کردن هم میتونی جایزه بگیری دعوتی که
-        انجام بدی و اولین واریزشو انجام بده تو امتیاز میگیری
+        میتونی <span className="text-background">دوستاتو</span> دعوت کنی و با
+        دعوت کردن هم میتونی جایزه بگیری دعوتی که انجام بدی و{" "}
+        <span className="text-background">اولین واریزشو</span> انجام بده{" "}
+        <span className="text-background"> تو </span>
+        امتیاز میگیری
       </p>
     ),
   },
