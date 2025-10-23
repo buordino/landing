@@ -16,13 +16,13 @@ body {
 }
 
 @theme {
-  --color-background: #3C4866;
+  --color-background: #3c4866;
   --color-primary: rgba(153, 174, 219, 1);
-  --color-light-primary: #809AD2;
-  --color-white: #F8F1E9;
-  --color-secondary: #5C74A7;
+  --color-light-primary: #809ad2;
+  --color-white: #f8f1e9;
+  --color-secondary: #5c74a7;
   --color-dark-sky: #516084;
-  --color-light-sky:#A8C4FF;
-  --shadow-3xl:1px 0px 50px 2px #0000004D;
+  --color-light-sky: #a8c4ff;
+  --shadow-3xl: 1px 0px 50px 2px #0000004d;
+  --shadow-inner: inset 16px 16px 33px rgba(0, 0, 0, 0.3);
 }
-
