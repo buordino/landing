@@ -1,3 +1,4 @@
+import AppDownloadSection from "@/components/sections/appDownload/AppDownloadSection";
 import Guide from "@/components/sections/guide/Guide";
 import Hero from "@/components/sections/hero/Hero";
 import Info from "@/components/sections/info/Info";
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <Guide />
       <Info />
+      <AppDownloadSection />
     </div>
   );
 }
