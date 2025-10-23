@@ -9,7 +9,7 @@ const AppDownloadSection = () => {
       <div className="mt-[52px]">
         <SectionTitle>چرا بـردیـنـو؟</SectionTitle>
         <div className="mt-[86px] flex flex-row items-center justify-center gap-12">
-          <div className="bg-dark-primary rounded-[64px] flex flex-col items-center gap-[52px] py-10 px-14 w-[500px]">
+          <div className="bg-dark-primary rounded-[64px] flex flex-col items-center gap-[52px] pt-10 pb-14 px-14 w-[500px]">
             <CustomButton className="w-full h-[70px] text-white bg-[linear-gradient(92.22deg,#5C74A7_2.19%,#7A8FBF_99.45%)] text-2xl">
               دانلود اپلیکیشن
             </CustomButton>
