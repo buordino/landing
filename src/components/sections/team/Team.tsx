@@ -6,7 +6,7 @@ const Team = () => {
     <section>
       <div className="mt-14">
         <SectionTitle>تیم بـردیـنـو</SectionTitle>
-        <div className="mt-11">
+        <div className="mt-22">
           <ul className="flex flex-row items-center justify-between gap-20">
             {[1, 2, 3, 4].map((item) => (
               <TeamItems
