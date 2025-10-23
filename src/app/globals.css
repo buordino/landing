@@ -24,4 +24,5 @@ body {
   --color-dark-sky: #516084;
   --color-light-sky: #a8c4ff;
   --shadow-3xl: 1px 0px 50px 2px #0000004d;
+  --shadow-inner: inset 16px 16px 33px rgba(0, 0, 0, 0.3);
 }
