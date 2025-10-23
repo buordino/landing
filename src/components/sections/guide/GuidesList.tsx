@@ -3,6 +3,7 @@ import GamePadIcon from "../../ui/icons/GamePadIcon";
 import UsersIcon from "../../ui/icons/UsersIcon";
 import WalletIcon from "../../ui/icons/WalletIcon";
 import GuideItems from "./GuideItems";
+import GiftIcon from "@/components/ui/icons/GiftIcon";
 
 const guides: GuideType[] = [
   {
@@ -40,6 +41,19 @@ const guides: GuideType[] = [
         <span className="text-background">اولین واریزشو</span> انجام بده{" "}
         <span className="text-background"> تو </span>
         امتیاز میگیری
+      </p>
+    ),
+  },
+  {
+    title: "جوایز",
+    icon: <GiftIcon className="w-8 h-8 fill-none stroke-white" />,
+    description: (
+      <p className="text-white font-medium">
+        اینجا <span className="text-background">جایزه</span> هارو میتونی ببینی و
+        هرکدوم که خواستی توی <span className="text-background">قرعه کشی</span>{" "}
+        شرکت کنی برای شرکت تو قرعه کشی میتونی کوپن رو{" "}
+        <span className="text-background">بخری</span> یا با{" "}
+        <span className="text-background">بازی کردن</span> و امتیاز بگیریش
       </p>
     ),
   },
