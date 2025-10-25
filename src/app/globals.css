@@ -27,5 +27,6 @@ body {
   --color-black: #333333;
   --shadow-3xl: 1px 0px 50px 2px #0000004d;
   --shadow-4xl: 3px 4px 22px 0px #00000029;
+  --shadow-5xl: 6px 6px 42px 0px #a3bffa99;
   --shadow-inner: inset 16px 16px 33px rgba(0, 0, 0, 0.3);
 }
