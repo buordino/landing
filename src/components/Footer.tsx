@@ -5,11 +5,13 @@ import ArrowLeft from "./ui/icons/ArrowLeft";
 import SMSIcon from "./ui/icons/SMSIcon";
 import CallIcon from "./ui/icons/CallIcon";
 import LocationIcon from "./ui/icons/LocationIcon";
+import Logo from "./ui/Logo";
+import Image from "next/image";
 
 const Footer = () => {
   return (
     <footer className="block max-w-[1250px] mx-auto mt-72 px-4 lg:px-[75px] mb-12">
-      <div className="w-full bg-secondary rounded-2xl py-7 px-10 shadow-5xl flex flex-row items-start">
+      <div className="w-full bg-secondary rounded-2xl pt-7 pb-4 px-10 shadow-5xl flex flex-row items-start">
         <div>
           <p className="font-medium text-sm leading-8 w-[340px]">
             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
@@ -83,6 +85,12 @@ const Footer = () => {
               </div>
             </li>
           </ul>
+          <div className="mt-6 flex items-start justify-end">
+            <div className="flex flex-row items-center gap-7">
+              <Logo />
+              <Image src={"/images/nemad.png"} alt="nemad.png" width={100} height={80} quality={70} />
+            </div>
+          </div>
         </div>
       </div>
     </footer>
