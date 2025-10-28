@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fa" dir="rtl">
-      <body className="bg-background text-white min-h-screen flex flex-col overflow-x-hidden">
+      <body className="bg-background text-white min-h-screen flex flex-col overflow-x-hidden relative">
         <Header />
         <main className="flex-grow">
           <div className="max-w-[1200px] mx-auto px-4 lg:px-[75px]">
