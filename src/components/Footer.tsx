@@ -1,12 +1,12 @@
 import Link from "next/link";
 import InstagramIcon from "./ui/icons/InstagramIcon";
 import YoutubeIcon from "./ui/icons/YoutubeIcon";
-import ArrowLeft from "./ui/icons/ArrowLeft";
 import SMSIcon from "./ui/icons/SMSIcon";
 import CallIcon from "./ui/icons/CallIcon";
 import LocationIcon from "./ui/icons/LocationIcon";
 import Logo from "./ui/Logo";
 import Image from "next/image";
+import FooterLinks from "./FooterLinks";
 
 const Footer = () => {
   return (
@@ -34,32 +34,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mr-24 w-44">
-          <ul className="flex flex-col items-stretch gap-5">
-            <li>
-              <Link href={"/"} className="flex flex-row items-center gap-1 ">
-                <span className="font-medium text-base">درباره برنامه</span>
-                <ArrowLeft className="fill-[#AFC3EB] size-4 pt-1" />
-              </Link>
-            </li>{" "}
-            <li>
-              <Link href={"/"} className="flex flex-row items-center gap-0.5">
-                <span className="font-medium text-base">ویژگی ها</span>
-                <ArrowLeft className="fill-[#AFC3EB] size-4 pt-1" />
-              </Link>
-            </li>{" "}
-            <li>
-              <Link href={"/"} className="flex flex-row items-center gap-0.5">
-                <span className="font-medium text-base">توسعه دهندگان</span>
-                <ArrowLeft className="fill-[#AFC3EB] size-4 pt-1" />
-              </Link>
-            </li>{" "}
-            <li>
-              <Link href={"/"} className="flex flex-row items-center gap-0.5">
-                <span className="font-medium text-base">صفحه اصلی</span>
-                <ArrowLeft className="fill-[#AFC3EB] size-4 pt-1" />
-              </Link>
-            </li>{" "}
-          </ul>
+          <FooterLinks />
         </div>
         <div className="mr-24 mt-5">
           <ul className="flex flex-col gap-4">
@@ -88,7 +63,13 @@ const Footer = () => {
           <div className="mt-6 flex items-start justify-end">
             <div className="flex flex-row items-center gap-7">
               <Logo />
-              <Image src={"/images/nemad.png"} alt="nemad.png" width={100} height={80} quality={70} />
+              <Image
+                src={"/images/nemad.png"}
+                alt="nemad.png"
+                width={100}
+                height={80}
+                quality={70}
+              />
             </div>
           </div>
         </div>
