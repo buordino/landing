@@ -5,7 +5,7 @@ const TeamItems = ({ teamMember }: TeamItemsPropsType) => {
   const { avatar, field, name } = teamMember;
   return (
     <li>
-      <div className="rounded-t-full rounded-bl-2xl rounded-br-2xl bg-light-primary pb-[22px] pt-20 px-5 relative w-48">
+      <div className="rounded-lg rounded-t-[100px] bg-light-primary pb-[18px] pt-22 px-4 relative w-[190px] shadow-7xl">
         <Image
           src={avatar}
           alt={name}
