@@ -8,6 +8,7 @@ import Logo from "./ui/Logo";
 import Image from "next/image";
 import FooterLinks from "./FooterLinks";
 import ScrollToTopButton from "./ui/ScrollToTopButton";
+import FooterSquare from "./ui/icons/FooterSquare";
 
 const contactItems = [
   {
@@ -80,6 +81,9 @@ const Footer = () => {
         <div className="absolute left-0 -top-16">
           <ScrollToTopButton />
         </div>
+      </div>
+      <div className="-z-[2] absolute -bottom-10 right-0">
+        <FooterSquare />
       </div>
     </footer>
   );
