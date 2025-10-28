@@ -8,6 +8,22 @@ import Logo from "./ui/Logo";
 import Image from "next/image";
 import FooterLinks from "./FooterLinks";
 
+const contactItems = [
+  {
+    label: "info@pilsun.com",
+    icon: <SMSIcon className={"w-6 h-6 stroke-white fill-none"} />,
+  },
+  {
+    label: "021662627",
+    icon: <CallIcon className="w-6 h-6 fill-none stroke-white" />,
+  },
+  {
+    label:
+      "قم ، میدان عباسی میدان گلها بلوار گلها خیابان مرداد دوم غربی پلاک 4",
+    icon: <LocationIcon className="w-10 h-10 stroke-white fill-none pb-4" />,
+  },
+];
+
 const Footer = () => {
   return (
     <footer className="block max-w-[1250px] mx-auto mt-72 px-4 lg:px-[75px] mb-12">
@@ -38,27 +54,14 @@ const Footer = () => {
         </div>
         <div className="mr-24 mt-5">
           <ul className="flex flex-col gap-4">
-            <li>
-              <div className="flex flex-row items-center gap-2.5">
-                <SMSIcon className={"w-6 h-6 stroke-white fill-none"} />
-                <span className="text-base font-medium">info@pilsun.com</span>
-              </div>
-            </li>{" "}
-            <li>
-              <div className="flex flex-row items-center gap-2.5">
-                <CallIcon className="w-6 h-6 fill-none stroke-white" />
-                <span className="text-base font-medium">021662627</span>
-              </div>
-            </li>{" "}
-            <li>
-              <div className="flex flex-row items-start gap-2.5">
-                <LocationIcon className="w-10 h-10 stroke-white fill-none pb-4" />
-                <span className="text-base font-medium">
-                  قم ، میدان عباسی میدان گلها بلوار گلها خیابان مرداد دوم غربی
-                  پلاک 4{" "}
-                </span>
-              </div>
-            </li>
+            {contactItems.map((item, index) => (
+              <li key={index}>
+                <div className="flex flex-row items-center gap-2.5">
+                  {item.icon}
+                  <span className="text-base font-medium">{item.label}</span>
+                </div>
+              </li>
+            ))}
           </ul>
           <div className="mt-6 flex items-start justify-end">
             <div className="flex flex-row items-center gap-7">
