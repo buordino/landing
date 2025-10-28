@@ -28,7 +28,7 @@ const contactItems = [
 const Footer = () => {
   return (
     <footer className="block max-w-[1250px] mx-auto mt-72 px-4 lg:px-[75px] mb-12">
-      <div className="relative w-full bg-secondary rounded-2xl pt-7 pb-4 px-10 shadow-5xl flex flex-row items-start">
+      <div className="relative w-full bg-secondary rounded-2xl pt-7 pb-4 px-9 shadow-5xl flex flex-row items-start">
         <div>
           <p className="font-medium text-sm leading-8 w-[340px]">
             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
