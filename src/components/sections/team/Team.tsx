@@ -1,5 +1,5 @@
 import SectionTitle from "@/components/ui/SectionTitle";
-import TeamItems from "./TeamItems";
+import TeamList from "./TeamList";
 
 const Team = () => {
   return (
@@ -7,18 +7,7 @@ const Team = () => {
       <div className="mt-14">
         <SectionTitle>تیم بـردیـنـو</SectionTitle>
         <div className="mt-22">
-          <ul className="flex flex-row items-center justify-between gap-20">
-            {[1, 2, 3, 4].map((item) => (
-              <TeamItems
-                key={item}
-                teamMember={{
-                  name: "علی محمودی",
-                  avatar: "/images/developer-mock.png",
-                  field: "Backend Developer",
-                }}
-              />
-            ))}
-          </ul>
+          <TeamList />
         </div>
       </div>
     </section>
