@@ -30,19 +30,19 @@ const Info = () => {
       <div className="mt-20">
         <SectionTitle>چرا بـردیـنـو؟</SectionTitle>
         <div className="mt-13">
-          <p className="font-medium text-lg">
+          <p className="font-medium text-base text-justify leading-7 md:leading-normal md:text-lg">
             بوردینو فقط یک قرعه‌کشی نیست؛ یه دنیای سرگرمیه که هر کاری توش انجام
             بدی، شانس تازه‌ای برای بردن بهت می‌ده.
           </p>
           <span className="font-medium text-2xl mt-[18px] block">
             با بـردیـنـو:
           </span>
-          <ul className="mt-12 flex flex-row items-center justify-between">
+          <ul className="mt-12 flex flex-row gap-x-2 gap-y-14 sm:gap-14 items-center justify-between sm:justify-center lg:justify-between flex-wrap">
             {infoItems.map((info, index) => (
               <InfoItems key={index} info={info} />
             ))}
           </ul>
-          <p className="font-medium text-lg mt-20">
+          <p className="font-medium text-base md:text-lg mt-20">
             پس اگه دنبال راهی ساده، مطمئن و پرهیجان برای امتحان شانس خودت هستی،
             بوردینو انتخاب درست توست!
           </p>
