@@ -42,7 +42,7 @@ const Info = () => {
               <InfoItems key={index} info={info} />
             ))}
           </ul>
-          <p className="font-medium text-base md:text-lg mt-20">
+          <p className="font-medium leading-7 md:leading-normal text-base md:text-lg mt-10 sm:mt-20">
             پس اگه دنبال راهی ساده، مطمئن و پرهیجان برای امتحان شانس خودت هستی،
             بوردینو انتخاب درست توست!
           </p>
