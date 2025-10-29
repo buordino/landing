@@ -6,7 +6,7 @@ const Team = () => {
     <section>
       <div className="mt-14">
         <SectionTitle>تیم بـردیـنـو</SectionTitle>
-        <div className="mt-22">
+        <div className="mt-10 overflow-visible">
           <TeamList />
         </div>
       </div>

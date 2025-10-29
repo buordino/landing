@@ -24,7 +24,7 @@ const TeamList = () => {
         }}
       >
         {staticTeamWorkers.map((item, index) => (
-          <SwiperSlide key={index + 1}>
+          <SwiperSlide key={index + 1} className="pt-12">
             <TeamItems teamMember={item} />
           </SwiperSlide>
         ))}
