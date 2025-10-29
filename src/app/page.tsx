@@ -6,7 +6,7 @@ import Team from "@/components/sections/team/Team";
 
 export default function Home() {
   return (
-    <div className="mt-[122px]">
+    <div className="mt-7 md:mt-[122px]">
       <Hero />
       <Guide />
       <Info />
