@@ -25,14 +25,14 @@ const contactItems = [
     label:
       "قم ، میدان عباسی میدان گلها بلوار گلها خیابان مرداد دوم غربی پلاک 4",
     icon: (
-      <LocationIcon className="w-9 h-9 sm:w-10 sm:h-10 stroke-white fill-none pb-4" />
+      <LocationIcon className="w-10 h-10 sm:w-10 sm:h-10 stroke-white fill-none sm:pb-4" />
     ),
   },
 ];
 
 const Footer = () => {
   return (
-    <footer className="block 2lg:max-w-[1250px] mx-6 2lg:mx-auto mt-72 px-4 lg:px-[75px] mb-12">
+    <footer className="block 2lg:max-w-[1250px] mx-6 2lg:mx-auto mt-36 2lg:mt-72 px-4 lg:px-[75px] mb-12">
       <div className="relative w-full bg-secondary rounded-2xl pt-7 pb-4 px-4 sm:px-9 shadow-5xl flex flex-col 2lg:flex-row items-start">
         <div>
           <p className="font-light sm:font-medium text-xs sm:text-sm leading-6 sm:leading-8 w-full 2lg:w-[340px]">
@@ -63,7 +63,7 @@ const Footer = () => {
             <ul className="flex flex-col gap-2.5 sm:gap-4">
               {contactItems.map((item, index) => (
                 <li key={index}>
-                  <div className="flex flex-row items-center gap-2 sm:gap-2.5">
+                  <div className="flex flex-row items-start gap-2 sm:gap-2.5">
                     {item.icon}
                     <span className="text-sm sm:text-base font-light sm:font-medium">
                       {item.label}
