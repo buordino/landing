@@ -19,8 +19,8 @@ const FooterLinks = () => {
               href={item.href}
               className="flex flex-row items-center gap-1 "
             >
-              <span className="font-medium text-base">{item.label}</span>
-              <ArrowLeft className="fill-[#AFC3EB] size-4 pt-1" />
+              <span className="font-medium text-sm sm:text-base">{item.label}</span>
+              <ArrowLeft className="fill-[#AFC3EB] size-4 pt-1 hidden 2lg:block" />
             </Link>
           </li>
         ))}
