@@ -73,7 +73,7 @@ const Footer = () => {
               ))}
             </ul>
 
-            <div className="mt-6 flex items-start justify-end">
+            <div className="mt-6 hidden 2lg:flex items-start justify-end">
               <div className="flex flex-row items-center gap-7">
                 <Logo />
                 <Image
@@ -84,6 +84,33 @@ const Footer = () => {
                   quality={70}
                 />
               </div>
+            </div>
+          </div>
+        </div>
+        <div className="block 2lg:hidden mt-4 w-full">
+          <div className="mt-12 flex flex-col items-start gap-0.5">
+            <p className="font-medium text-sm leading-8">
+              ما را در شبکه های اجتماعی دنبال کنید
+            </p>
+            <div className="flex flex-row items-center gap-3">
+              <Link href={"/"}>
+                <InstagramIcon className="w-7 h-7 fill-white" />
+              </Link>
+              <Link href={"/"}>
+                <YoutubeIcon className="w-6 h-6 fill-white" />
+              </Link>
+            </div>
+          </div>
+          <div className="mt-5 w-full">
+            <div className="flex flex-row items-center justify-between sm:justify-start w-full">
+              <Logo />
+              <Image
+                src={"/images/nemad.png"}
+                alt="nemad.png"
+                width={120}
+                height={100}
+                quality={70}
+              />
             </div>
           </div>
         </div>
