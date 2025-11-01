@@ -12,14 +12,16 @@ const items = [
 const FooterLinks = () => {
   return (
     <>
-      <ul className="flex flex-col items-stretch gap-5">
+      <ul className="flex flex-col items-stretch gap-2 sm:gap-5">
         {items.map((item, index) => (
           <li key={index}>
             <Link
               href={item.href}
               className="flex flex-row items-center gap-1 "
             >
-              <span className="font-medium text-sm sm:text-base">{item.label}</span>
+              <span className="font-light sm:font-medium text-sm sm:text-base">
+                {item.label}
+              </span>
               <ArrowLeft className="fill-[#AFC3EB] size-4 pt-1 hidden 2lg:block" />
             </Link>
           </li>
