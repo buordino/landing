@@ -2,9 +2,12 @@ import { GuideItemsPropsType } from "@/types/guidesTypes";
 
 const GuideItems = ({ guide }: GuideItemsPropsType) => {
   return (
-    <li className="space-y-3 text-white">
+    <li className="space-y-1 sm:space-y-3 text-white">
       <div className="flex flex-row items-center gap-2.5">
-        {guide.icon} <h3 className="font-bold text-xl">{guide.title}</h3>
+        {guide.icon}{" "}
+        <h3 className="font-medium sm:font-bold text-lg md:text-xl">
+          {guide.title}
+        </h3>
       </div>
       {guide.description}
     </li>

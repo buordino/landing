@@ -1,7 +1,9 @@
 import HeaderNav from "./HeaderNav";
 import ThemeController from "./ThemeController";
 import HeaderCircleDark from "./ui/icons/HeaderCircleDark";
+import HeaderCircleDarkSmall from "./ui/icons/HeaderCircleDarkSmall";
 import HeaderCircleLight from "./ui/icons/HeaderCircleLight";
+import HeaderCircleLightSmall from "./ui/icons/HeaderCircleLightSmall";
 import Logo from "./ui/Logo";
 
 const Header = () => {
@@ -12,11 +14,17 @@ const Header = () => {
         <HeaderNav />
         <ThemeController />
       </div>
-      <div className="inline-block absolute left-0 top-0 z-[-2]">
+      <div className="hidden md:inline-block absolute left-0 top-0 z-[-2]">
         <HeaderCircleDark />
+      </div>{" "}
+      <div className="inline-block md:hidden absolute left-0 top-0 z-[-2]">
+        <HeaderCircleDarkSmall />
       </div>
-      <div className="inline-block absolute left-0 top-0 z-[-2]">
+      <div className="hidden md:inline-block absolute left-0 top-0 z-[-2]">
         <HeaderCircleLight />
+      </div>{" "}
+      <div className="md:hidden inline-block absolute left-0 top-0 z-[-2]">
+        <HeaderCircleLightSmall />
       </div>
     </header>
   );
