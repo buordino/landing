@@ -114,7 +114,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="absolute left-0 -top-16">
+        <div className="absolute left-0 -top-12 sm:-top-16">
           <ScrollToTopButton />
         </div>
       </div>

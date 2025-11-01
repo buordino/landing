@@ -13,7 +13,7 @@ const ScrollToTopButton = () => {
   return (
     <button
       onClick={scrollToTop}
-      className="size-14 bg-secondary rounded-full flex items-center justify-center cursor-pointer shadow-6xl"
+      className="size-10 sm:size-14 bg-secondary rounded-full flex items-center justify-center cursor-pointer shadow-8xl sm:shadow-6xl"
     >
       <ArrowUp className="fill-white w-6 h-6" />
     </button>
