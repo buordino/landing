@@ -32,7 +32,8 @@ body {
   --shadow-6xl: 0px 4px 4px 0px #00000040;
   --shadow-7xl: 6px 6px 17px 0px #0000001a;
   --shadow-inner: inset 16px 16px 33px rgba(0, 0, 0, 0.3);
-  --breakpoint-xs: 450px;
   --breakpoint-2xs: 0px;
+  --breakpoint-smMobile: 380px;
+  --breakpoint-xs: 450px;
   --breakpoint-2lg: 1100px;
 }

@@ -55,8 +55,8 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="w-full flex flex-row items-start justify-between gap-12 sm:gap-0 mt-7 sm:mt-5 2lg:mt-0">
-          <div className="2lg:mr-24 w-3/5 sm:w-44">
+        <div className="w-full flex flex-row flex-wrap smMobile:flex-nowrap items-start justify-between gap-0 2xs:gap-12 sm:gap-0 mt-7 sm:mt-5 2lg:mt-0">
+          <div className="2lg:mr-24 w-full sm:w-44">
             <FooterLinks />
           </div>
           <div className="2lg:mr-24 2lg:mt-5">
